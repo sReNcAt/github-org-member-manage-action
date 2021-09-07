@@ -1,0 +1,18 @@
+apiversion: apps/v1
+kind: Deployment
+
+Users:
+- name: srencat
+  psermission:
+    admin : True
+    maintain : True
+    push : True
+    triage : True
+    pull : True
+- name: pYoPYosPAm
+  permission:
+    admin : False
+    maintain : False
+    push : True
+    triage : True
+    pull : True
