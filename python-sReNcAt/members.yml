@@ -1,0 +1,22 @@
+apiversion: apps/v1
+kind: Deployment
+
+git:
+- owner: sReNcAt
+  repos:
+  - repo: github-org-member-manage-action
+    Users:
+    - name: srencat
+      permission:
+        admin : True
+        maintain : True
+        push : True
+        triage : True
+        pull : True
+    - name: pYoPYosPAm
+      permission:
+        admin : False
+        maintain : False
+        push : True
+        triage : True
+        pull : True

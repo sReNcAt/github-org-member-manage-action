@@ -3,13 +3,24 @@
 멤버삭제의 경우 print('\n\'s not found this member info in users.yml') 라인에 코드추가시 멤버 자동삭제 기능도 추가 구현가능
 
 ```yaml
--- yml
-    |
-    ----- srencat (Owner)
-            |
-            |
-            ------ github-org-member-manage-action (Repo)
-                    |
-                    |
-                    -------- users.yml (https://github.com/sReNcAt/github-org-member-manage-action Repo의 collabo 설정)
+git:
+- owner: sReNcAt [Owner Name]
+  repos:
+  - repo: github-org-member-manage-action [Repo Name]
+    Users:
+    - name: srencat [User Name]
+      permission:
+        admin : True
+        maintain : True
+        push : True
+        triage : True
+        pull : True
+    - name: pYoPYosPAm
+      permission:
+        admin : False
+        maintain : False
+        push : True
+        triage : True
+        pull : True
+
 ```
